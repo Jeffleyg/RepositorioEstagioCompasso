@@ -1,0 +1,39 @@
+
+
+//Exception code unique violation
+
+public class CodigoUniqueViolationException extends RuntimeException {
+    public CodigoUniqueViolationException(String message) {
+        super(message);
+    }
+}
+
+// Exception Cpf
+
+public class CpfUniqueViolationException extends RuntimeException {
+    public CpfUniqueViolationException(String message) {
+        super(message);
+    }
+}
+
+// Exception Entity not found
+public class EntityNotFoundException extends RuntimeException {
+    public EntityNotFoundException(String message) {
+        super(message);
+    }
+}
+
+
+//Exception password Invalid
+public class PasswordInvalidException extends RuntimeException {
+    public PasswordInvalidException(String message) {
+        super(message);
+    }
+}
+
+// Exception Username unique
+public class UsernameUniqueViolationException extends RuntimeException {
+    public UsernameUniqueViolationException(String message) {
+        super(message);
+    }
+}
