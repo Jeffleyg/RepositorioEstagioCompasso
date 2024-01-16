@@ -101,7 +101,7 @@ public class ClienteController {
             responses = {
                     @ApiResponse(responseCode = "200", description = "Recurso recuperado com sucesso",
                             content = @Content(mediaType = " application/json;charset=UTF-8",
-                                    schema = @Schema(implementation = ClienteResponseDto.class))
+                                    schema = @Schema(implementation = PageableDto.class))
                     ),
                     @ApiResponse(responseCode = "403", description = "Recurso não permito ao perfil de CLIENTE",
                             content = @Content(mediaType = " application/json;charset=UTF-8",
