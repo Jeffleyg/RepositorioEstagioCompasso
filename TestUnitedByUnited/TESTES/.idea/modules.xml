@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TESTES.iml" filepath="$PROJECT_DIR$/.idea/TESTES.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sw-planet-api/sw-planet-api.iml" filepath="$PROJECT_DIR$/sw-planet-api/sw-planet-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sw-planet-api/Sw-planet-api.iml" filepath="$PROJECT_DIR$/Sw-planet-api/Sw-planet-api.iml" />
     </modules>
   </component>
 </project>
