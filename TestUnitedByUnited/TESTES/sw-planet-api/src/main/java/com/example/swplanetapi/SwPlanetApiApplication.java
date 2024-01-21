@@ -1,4 +1,4 @@
-package com.example.Swplanetapi;
+package com.example.swplanetapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
