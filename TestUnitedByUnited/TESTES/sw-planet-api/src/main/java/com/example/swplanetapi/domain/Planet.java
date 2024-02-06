@@ -29,6 +29,17 @@ public class Planet {
   @Column(nullable = false)
   private String terrain;
 
+  @NotEmpty
+  @Column(nullable = false)
+  private String cep;
+
+  private String logradouro;
+  private String complemento;
+  private String bairro;
+  private String localidade;
+  private String uf;
+
+
   public Planet() {
   }
 
@@ -48,6 +59,7 @@ public class Planet {
     this.name = name;
     this.climate = climate;
     this.terrain = terrain;
+    this.cep = cep;
   }
 
   public Long getId() {
@@ -58,30 +70,6 @@ public class Planet {
     this.id = id;
   }
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public String getClimate() {
-    return climate;
-  }
-
-  public void setClimate(String climate) {
-    this.climate = climate;
-  }
-
-  public String getTerrain() {
-    return terrain;
-  }
-
-  public void setTerrain(String terrain) {
-    this.terrain = terrain;
-  }
-
   @Override
   public boolean equals(Object obj) {
     return EqualsBuilder.reflectionEquals(obj, this);
@@ -89,7 +77,17 @@ public class Planet {
 
   @Override
   public String toString() {
-    return "Planet [climate=" + climate + ", id=" + id + ", name=" + name + ", terrain=" + terrain + "]";
+    return "Planet{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", climate='" + climate + '\'' +
+            ", terrain='" + terrain + '\'' +
+            ", cep='" + cep + '\'' +
+            ", logradouro='" + logradouro + '\'' +
+            ", complemento='" + complemento + '\'' +
+            ", bairro='" + bairro + '\'' +
+            ", localidade='" + localidade + '\'' +
+            ", uf='" + uf + '\'' +
+            '}';
   }
-
 }
